@@ -16,22 +16,34 @@ namespace rssFeedLibrary
         /// <param name="companyRssFeeds"></param>
         /// <param name="numDays"></param>
         /// <returns>Dictionary of companys and rssFeeds </returns>
-        public Dictionary<string, string> GetNonActiveFeeds(Dictionary<string, string> companyRssFeeds, int numDays)
+        public Dictionary<string, List<string>> GetNonActiveFeeds(Dictionary<string, List<string>> companyRssFeeds, int numDays)
         {
-            Dictionary<string, string> nonActiveFeeds = new Dictionary<string, string>();
+            Dictionary<string, List<string>> companyRssFeedsNoRecentPublication = new Dictionary<string, List<string>>();
 
-            foreach (KeyValuePair<string, string> rssFeed in companyRssFeeds)
+            foreach (KeyValuePair<string, List<string>> companyRssFeed in companyRssFeeds)
             {
-                XmlReader rssFeedReader = XmlReader.Create(rssFeed.Value.ToString());
-                SyndicationFeed rssFeedData = SyndicationFeed.Load(rssFeedReader);
-                var items = rssFeedData.Items.Where(i => i.PublishDate >= DateTimeOffset.Now.AddDays(-numDays));
-                if (items.Count() == 0)
+                string company = companyRssFeed.Key;
+                List<string> rssFeeds = companyRssFeed.Value;
+                List<string> nonActiveFeeds = new List<string>();
+                bool nonActiveFeedsExist = false;
+                foreach (string rssFeed in rssFeeds)
                 {
-                    nonActiveFeeds.Add(rssFeed.Key, rssFeed.Value); //
+                    XmlReader rssFeedReader = XmlReader.Create(rssFeed);
+                    SyndicationFeed rssFeedData = SyndicationFeed.Load(rssFeedReader);
+                    SyndicationItem item = rssFeedData.Items.First();
+                    if ((DateTime.Now - item.PublishDate.Date).TotalDays > numDays)
+                    {
+                        nonActiveFeeds.Add(rssFeed);
+                        nonActiveFeedsExist = true;
+                    }
+                }
+                if (nonActiveFeedsExist)
+                {
+                    companyRssFeedsNoRecentPublication.Add(company, nonActiveFeeds); //
                 }
             }
 
-            return nonActiveFeeds;
+            return companyRssFeedsNoRecentPublication;
         }
 
     }
