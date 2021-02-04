@@ -1,0 +1,12 @@
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\bin\Debug\net5.0\rssFeedLibrary.deps.json
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\bin\Debug\net5.0\rssFeedLibrary.dll
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\bin\Debug\net5.0\ref\rssFeedLibrary.dll
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\bin\Debug\net5.0\rssFeedLibrary.pdb
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\obj\Debug\net5.0\rssFeedLibrary.csprojAssemblyReference.cache
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\obj\Debug\net5.0\rssFeedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\obj\Debug\net5.0\rssFeedLibrary.AssemblyInfoInputs.cache
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\obj\Debug\net5.0\rssFeedLibrary.AssemblyInfo.cs
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\obj\Debug\net5.0\rssFeedLibrary.csproj.CoreCompileInputs.cache
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\obj\Debug\net5.0\rssFeedLibrary.dll
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\obj\Debug\net5.0\ref\rssFeedLibrary.dll
+D:\Development\rssFeedLibrary\rssFeedLibrary\rssFeedLibrary\obj\Debug\net5.0\rssFeedLibrary.pdb
