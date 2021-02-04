@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WOAJ4DLENKHIGbgsRJBFH3wxy94EShPdJaLHVix4kxCH1HhheYcL7bB+5KTyOl57ODdADOP89RuowaNkfE7qGA==",
+  "success": true,
+  "projectFilePath": "D:\\Development\\rssFeedLibrary\\rssFeedLibrary\\rssFeedLibrary\\rssFeedLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joep\\.nuget\\packages\\system.servicemodel.syndication\\5.0.0\\system.servicemodel.syndication.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
